@@ -1,0 +1,20 @@
+"use strict";
+// export interface Sortable {
+//   length: number;
+//   compare(i: number, j: number): boolean;
+//   swap(i: number, j: number): void;
+// }
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Sorter = void 0;
+class Sorter {
+    sort() {
+        for (let i = 0; i < this.length; i++) {
+            for (let j = 0; j < this.length - i - 1; j++) {
+                if (this.compare(j, j + 1)) {
+                    this.swap(j, j + 1);
+                }
+            }
+        }
+    }
+}
+exports.Sorter = Sorter;

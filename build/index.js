@@ -1,8 +1,11 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const User_1 = __importDefault(require("./User"));
-const user = new User_1.default();
-console.log('hihii');
+const LinkedList_1 = require("./LinkedList");
+const list = new LinkedList_1.LinkedList();
+list.add(100);
+list.add(3);
+list.add(-3);
+list.add(4);
+console.log(list.print());
+console.log(list.sort());
+console.log(list.print());

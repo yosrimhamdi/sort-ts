@@ -1,5 +1,12 @@
-import User from './User';
+import { LinkedList } from './LinkedList';
 
-const user = new User();
+const list = new LinkedList();
 
-console.log('hihii');
+list.add(100);
+list.add(3);
+list.add(-3);
+list.add(4);
+
+console.log(list.print());
+console.log(list.sort());
+console.log(list.print());
